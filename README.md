@@ -2,11 +2,11 @@
 
 Versão Desktop
 
-
+![](https://github.com/andersonv16/Review/blob/master/assets/img/Home%20-%20Reviews-Desktop.gif)
 
 Versão Mobile
 
-
+![](https://github.com/andersonv16/Review/blob/master/assets/img/Home%20-%20Reviews-Mobile.gif)
 
 # Guia de estilos
 
