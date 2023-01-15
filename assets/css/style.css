@@ -1,0 +1,197 @@
+body{
+   background-color:  #F1F5F8;
+   font-family: 'Open sans', sans-serif;
+   letter-spacing: .2rem;
+   overflow: hidden;
+
+  
+}
+.principal{
+    margin: 30% auto;
+    text-align: center;
+    padding: 1.5rem;
+}
+.titulo__review{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #102A42;
+    white-space: nowrap;
+    margin-bottom: 1.5rem;
+   
+}
+.underline{
+    height: 0.25rem;
+    width: 5rem;
+    background-color: #49A6E9;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+   
+}
+.conteudo__review{
+    background-color: #FFFFFF;
+    padding: 1.5rem 2rem;
+    margin: 16px;
+    height: 440px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px #b8b9b9;
+}
+
+.imagem_container{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #49A6E9;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+.imagem_container::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f10e";
+    background-color: #49A6E9;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(25%);
+}
+.imagem__pessoa{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    top: 3px;
+    right: 7px;
+}
+.nome__pessoa{
+font-weight: 700;
+color: #102A42;
+font-size: 0.9rem;
+padding-bottom: 0.5rem;
+}
+.cargo__pessoa{
+    color: #49A6EA;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+.texto__review{
+    color: #7AA8B3;
+    letter-spacing:normal;
+    display: block;
+    line-height: 1.2rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-bottom: 0.75rem;
+}
+.trocar__review{
+    padding-bottom: 1rem;
+}
+.botao__prev, .botao__next{
+  
+    color: #8BCBF9;
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: none;
+}
+.botao__prev::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f053";
+
+}
+.botao__next::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f054"
+}
+.botao__random{
+    background-color: #EBF7FF;
+    color: #2E6A95;
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border: solid #0f3961 2px;
+    border-radius: 10px;
+}
+.botao__random:hover{
+    background-color: #49A6EA;
+    color: #EBF7FF;
+}
+.botao__random:active{
+    background-color: #49A6EA;
+    color: #EBF7FF;
+}
+
+@media screen and (min-width: 1366px){
+    .principal{
+        margin: 3% auto;
+        text-align: center;
+        padding: 1.5rem;
+    }
+    .titulo__review{
+        font-size: 3rem;
+    }
+    .conteudo__review{
+        background-color: #FFFFFF;
+        padding: 1.5rem 2rem;
+        margin: 0 auto;
+        height: 100%;
+        width: 50%;
+    }
+    .nome__pessoa{
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+        }
+        .cargo__pessoa{
+            font-size: 1rem;
+        }
+    .texto__review{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .imagem_container{
+        position: relative;
+        width: 250px;
+        height: 250px;
+        margin-bottom: 1.5rem;
+    }
+    .imagem_container::after{
+        font-size: 1.5rem;
+        left: 10px;
+        width: 3rem;
+        height: 3rem;
+  
+        transform: translateY(45%);
+    }
+    .imagem__pessoa{
+        width: 250px;
+        height: 250px;
+    }
+    .botao__random{
+      
+        padding: 0.5rem 0.5rem;
+        cursor: pointer;
+      
+    }
+    .botao__prev:hover, .botao__next:hover{
+       color: #49A6EA;
+       cursor: pointer;
+    }
+    .conteudo__review:hover{
+        border-radius: 10px;
+        box-shadow: 0 5px 15px #757575;
+        transition: all 0.25s;
+    }
+}
